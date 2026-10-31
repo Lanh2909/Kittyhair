@@ -1,0 +1,77 @@
+/* =====================================================================
+   Kitty Hair – giao diện quản trị (ghi đè SB Admin 2 sang tông hồng)
+   ===================================================================== */
+
+:root {
+    --kh-pink: #ff8fab;
+    --kh-rose: #f06292;
+    --kh-red: #d6336c;
+    --kh-wine: #8a1c43;
+    --kh-blush: #ffe3ec;
+    --kh-cream: #fff5f8;
+}
+
+body, #content-wrapper { font-family: 'Be Vietnam Pro', 'Nunito', 'Segoe UI', Arial, sans-serif; background: var(--kh-cream); }
+
+/* Sidebar */
+.sidebar { background: linear-gradient(180deg, var(--kh-wine) 0%, var(--kh-red) 100%); }
+.sidebar .nav-item.active > .nav-link, .sidebar .nav-item .nav-link:hover { color: #fff; background: rgba(255, 255, 255, .14); border-radius: 10px; }
+.sidebar .nav-item .nav-link { margin: 0 .5rem; padding: .7rem 1rem; }
+.sidebar .sidebar-heading { color: rgba(255, 255, 255, .55); }
+.sidebar .sidebar-brand { height: 4.5rem; text-transform: none; }
+.sidebar-logo { width: 38px; height: 38px; background: #fff0f5; border-radius: 12px; padding: 3px; }
+.sidebar-brand-text { font-weight: 700; font-size: 1.15rem; }
+#sidebarToggle { background-color: rgba(255, 255, 255, .2); }
+
+/* Màu chủ đạo */
+.text-primary { color: var(--kh-red) !important; }
+.bg-primary { background-color: var(--kh-red) !important; }
+.btn-primary { background: linear-gradient(135deg, var(--kh-rose), var(--kh-red)); border: 0; }
+.btn-primary:hover, .btn-primary:focus { background: linear-gradient(135deg, var(--kh-red), var(--kh-wine)); }
+.btn-outline-primary { color: var(--kh-red); border-color: var(--kh-rose); }
+.btn-outline-primary:hover { background: var(--kh-rose); border-color: var(--kh-rose); }
+.btn-info { background: var(--kh-rose); border-color: var(--kh-rose); }
+.btn-info:hover { background: var(--kh-red); border-color: var(--kh-red); }
+.border-left-primary { border-left: .25rem solid var(--kh-red) !important; }
+.border-left-success { border-left: .25rem solid #e5779a !important; }
+.border-left-info { border-left: .25rem solid #b79ae0 !important; }
+.border-left-warning { border-left: .25rem solid var(--kh-gold, #e6b86a) !important; }
+.page-item.active .page-link { background: var(--kh-red); border-color: var(--kh-red); }
+.page-link { color: var(--kh-red); }
+.form-control:focus, .custom-select:focus { border-color: var(--kh-rose); box-shadow: 0 0 0 .2rem rgba(240, 98, 146, .2); }
+.card { border: 0; border-radius: 14px; }
+.card-header { background: #fff; border-bottom: 1px solid #fbdbe5; border-radius: 14px 14px 0 0 !important; }
+.table thead th { background: var(--kh-blush); color: var(--kh-wine); border-bottom: 0; white-space: nowrap; }
+.table-hover tbody tr:hover { background: #fff0f5; }
+.badge-kitty { background: var(--kh-blush); color: var(--kh-red); }
+a { color: var(--kh-red); }
+a:hover { color: var(--kh-wine); }
+
+/* Avatar */
+.avatar-img, .avatar-initial { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; display: inline-flex; vertical-align: middle; }
+.avatar-initial { align-items: center; justify-content: center; background: var(--kh-rose); color: #fff; font-weight: 700; }
+.topbar-avatar { width: 34px; height: 34px; }
+.avatar-lg { width: 110px; height: 110px; font-size: 2.4rem; }
+.thumb-sm { width: 46px; height: 46px; border-radius: 10px; object-fit: cover; }
+.thumb-md { width: 120px; height: 120px; border-radius: 14px; object-fit: cover; border: 2px solid #fbdbe5; }
+
+/* Thanh công cụ danh sách */
+.search-box { max-width: 460px; width: 100%; }
+.filter-pills a { display: inline-block; padding: .3rem .9rem; margin: 0 .25rem .5rem 0; border-radius: 50px; border: 1px solid #f3cdd9; background: #fff; font-size: .85rem; font-weight: 600; }
+.filter-pills a.active { background: var(--kh-red); border-color: var(--kh-red); color: #fff; }
+.pager-summary { margin: .5rem 0; }
+.form-text-error { color: #dc3545; font-size: .85rem; display: block; margin-top: .25rem; }
+.field-hint { color: #8f7482; font-size: .8rem; }
+
+/* Lịch làm việc */
+input[type=checkbox].day-switch { width: 22px; height: 22px; vertical-align: middle; cursor: pointer; accent-color: var(--kh-red); }
+.day-name { font-size: 1.05rem; font-weight: 700; color: var(--kh-wine); margin-left: .6rem; }
+.worktime-day { margin: .4rem 0; border-bottom: 1px solid #fbdbe5; min-height: 58px; align-items: center; }
+
+/* Đăng nhập */
+.login-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #ffe3ec, #efe0fb); padding: 20px; }
+.login-card { background: #fff; width: 100%; max-width: 440px; border-radius: 22px; padding: 2.4rem 2.2rem; box-shadow: 0 20px 50px rgba(214, 51, 108, .18); }
+.login-card .logo { display: block; height: 110px; margin: 0 auto 1rem; }
+.login-card h1 { font-size: 1.4rem; text-align: center; color: var(--kh-wine); font-weight: 700; }
+.login-card .subtitle { text-align: center; color: #8f7482; margin-bottom: 1.5rem; }
+.login-card .form-control { height: calc(1.5em + 1.2rem + 2px); border-radius: 12px; }
