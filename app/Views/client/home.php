@@ -6,7 +6,7 @@ use App\Core\Csrf;
 use App\Helpers\Format;
 
 /**
- * Trang chủ (TV2). Biến: $categories, $servicesByCategory, $employees, $heroSlides, $featured, $reviews.
+ * Trang chủ
  */
 ?>
 
