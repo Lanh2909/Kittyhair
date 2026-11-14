@@ -18,7 +18,7 @@ $tiktokIcon = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColo
 $socials = [
     'facebook_url'  => ['<i class="fab fa-facebook-f"></i>', 'Facebook'],
     'instagram_url' => ['<i class="fab fa-instagram"></i>', 'Instagram'],
-    'tiktok_url'    => [$tiktokIcon, 'TikTok'],   // Font Awesome 5.13 chưa có icon TikTok nên dùng SVG
+    'tiktok_url'    => [$tiktokIcon, 'TikTok'],
 ];
 ?>
 <!DOCTYPE html>
