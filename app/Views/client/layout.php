@@ -6,8 +6,7 @@ use App\Core\Flash;
 use App\Helpers\Format;
 
 /**
- * Layout chung của site khách hàng (TV2): <head>, thanh điều hướng, flash, <main>, chân trang, nạp JavaScript.
- * Trước đây là templates/header.php + templates/footer.php.
+ * Layout chung của site khách hàng: head, thanh điều hướng, flash, <main>, chân trang, nạp JavaScript.
  * Biến: $content (HTML của trang con), tùy chọn $pageTitle, $pageDescription, $extraScripts.
  */
 
