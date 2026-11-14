@@ -7,7 +7,6 @@ use App\Helpers\Format;
 
 /**
  * Layout chung của site khách hàng: head, thanh điều hướng, flash, <main>, chân trang, nạp JavaScript.
- * Biến: $content (HTML của trang con), tùy chọn $pageTitle, $pageDescription, $extraScripts.
  */
 
 $salonName       = $settings->get('salon_name');
