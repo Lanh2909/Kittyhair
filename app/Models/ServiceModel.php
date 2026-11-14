@@ -19,7 +19,7 @@ final class ServiceModel extends Model
         return $this->db->all('SELECT * FROM services ORDER BY ' . $orderBy);
     }
 
-    /** Dịch vụ gom theo category_id: [category_id => [dịch vụ, ...]]. */
+    /** Dịch vụ gom theo category_id: [category_id => [dịch vụ]]. */
     public function groupedByCategory(string $orderBy = 'service_name'): array
     {
         $grouped = [];
