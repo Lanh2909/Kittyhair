@@ -6,7 +6,7 @@ use App\Helpers\Format;
 use App\Helpers\SearchForm;
 
 /**
- * Bảng giá công khai (TV2). Biến: $categories, $rows, $keyword, $categoryId, $pager, $keep.
+ * Bảng giá công khai. Biến: $categories, $rows, $keyword, $categoryId, $pager, $keep.
  */
 ?>
 <section class="page-wrap">
